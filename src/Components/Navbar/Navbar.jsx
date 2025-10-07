@@ -22,12 +22,12 @@ const Menu = [
     link: "/#",
   },
   {
-    id: 3,
+    id: 4,
     name: "Mens Wear",
     link: "/#",
   },
   {
-    id: 3,
+    id: 5,
     name: "Electronics",
     link: "/#",
   },
@@ -73,7 +73,7 @@ const Navbar = () => {
               />
               <GoSearch className="text-gray-500 text-xl hover:text-orange-400 absolute top-1/2 -translate-y-1/2 right-3" />
             </div>
-            <button className="bg-gradient-to-r from-orange-400 to-orange-500 transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group">
+            <button className="bg-gradient-to-r from-orange-400 to-orange-500 transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group cursor-pointer">
               <span className="group-hover:block hidden transition-all duration-300 font-semibold text-lg">
                 Order
               </span>
@@ -113,7 +113,7 @@ const Navbar = () => {
                   <li key={data.id}>
                     <a
                       href={data.link}
-                      className="hover:text-orange-400 transition-colors duration-200"
+                      className="inline-block w-full rounded-md p-1 hover:text-orange-400 transition-colors duration-200"
                     >
                       {data.name}
                     </a>
